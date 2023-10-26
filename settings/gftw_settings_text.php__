@@ -1,0 +1,36 @@
+<?php
+
+/*add_action('updated_option', function( $option, $value ) { 
+    if($option == 'gftw_fonts'){ print_r($value); exit; }
+}, 10, 2);
+
+*/
+function register_gftw_settings_font() {
+	//register our settings
+	register_setting( 'gftw-settings-font-group', 'gftw_fonts' );
+
+}
+
+function gftw_settings_font_page() {
+?>
+<div class="wrap">
+<h1>Manage Fonts</h1>
+
+<form method="post" action="<?php echo admin_url('options.php') ; ?>">
+    <?php settings_fields( 'gftw-settings-font-group' ); ?><pre>
+    <?php do_settings_sections( 'gftw-settings-font-group' ); print_r(get_option('gftw_fonts')) ?></pre>
+    <table class="form-table" id="fontTable">
+        <tr valign="top">
+            <th scope="row">Add New Font (.ttf only)</th>
+            <td style="width:325px"><input type="text" name="gftw_fonts[1][title]" placeholder="Font Name" />
+				<input type="file" name="gftw_fonts[1][file]"  />
+            </td>
+            <td align="left"><?php submit_button('Upload Font'); ?></td>
+        </tr>
+    </table>
+    
+    
+
+</form>
+</div>
+<?php } ?>

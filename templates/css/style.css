@@ -1,0 +1,46 @@
+.site-content{ padding:0px; }
+.site-header{ padding:0px 50px; }
+.entry-content{ float:none !important; overflow:hidden !important; width:100% !important;  }
+.form-group label{ margin-right:10px; min-width:50px; }
+.form-group input, .form-group select, .input-group{  width:70%; }
+
+/**
+Products Display
+**/
+/*panel*/
+
+.adtocart { background: #fc5959;width: 50px;height: 50px;border-radius: 50%;-webkit-border-radius: 50%;color: #fff;display: inline-block;text-align: center;border: 3px solid #fff;left: 45%;bottom: -25px;position: absolute;}
+.adtocart i{color: #fff;font-size: 25px;line-height: 42px;} 
+.product-list .price {color:#fc5959 ;font-size: 15px;}
+.pro-img-details { border:2px solid #ddd; }
+.pro-img-details img {width: 100%;}
+.pro-price {padding:10px 0;}
+.pro-price span{ font-size: 18px; }
+.amount-old {text-decoration: line-through;}
+.form-group .quantity {width: 120px;}
+.pro-img-list { margin: 10px 0 0 -15px; width: 100%; display: inline-block;}
+.pro-img-list a {  float: left; margin-right: 10px; margin-bottom: 10px; }
+.details{ margin:10px 5px; }
+/*** Designer **/
+.gftw.ui-draggable.ui-resizable{ padding:3px; cursor:move; display:flex; justify-content:center; align-items: center; position:absolute !important; left:220px; top:250px; z-index:100; }
+		.gftw.ui-draggable.ui-resizable:hover{ border:1px solid #000; padding:2px; }
+		.gftw.ui-draggable.ui-resizable .ui-resizable-se{ background-position: -64px -1000000px; }
+		.gftw.ui-draggable.ui-resizable:hover .ui-resizable-se{ background-position: -64px -224px; right:-5px; bottom:-5px; display:block; }
+		.gftw.ui-draggable.ui-resizable .close{ cursor:pointer; display:none; position:absolute; top:0px; left:0; }
+		.gftw.ui-draggable.ui-resizable:hover .close{ display:block; background-color: #fff; border: 1px solid #ddd; padding: 9px; }
+		.gftw.ui-draggable.ui-resizable .gftw-required{ color:#fff; background:#f00; font-size:11px; position:absolute; top:-17px; right:0; display:none }
+		.gftw.ui-draggable.ui-resizable:hover .gftw-required{ display:block; }
+		.gftw.ui-draggable.ui-resizable .ovl-txt{ display:inline-block; white-space: nowrap; font-size:25px; line-height:0.75; }
+		.gftw.ui-draggable.ui-resizable.pImage{ width:200px; }
+
+     	#imageContiner{ position:relative; background:#fff; width:100%;   }
+		#imageMainP, #imageMainPr{ max-width:100%; }
+		.imgDesigner{ position:absolute; z-index:900; width:441px; height:551.25px; top:0; left:0; }
+/***
+Cart
+**/ 
+.cart-item{ margin-top:10px; }
+/***
+CheckOut
+**/
+.checkout-page .form-group input{ width:100%; }
